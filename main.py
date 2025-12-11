@@ -12,8 +12,8 @@ async def read_index() -> str:
         <title>FastAPI Hello</title>
       </head>
       <body>
-        <h1>Welcome</h1>
-        <p>Open the interactive API docs at http://URL/docs.</p>
+        <h1>Welcome FastAPI!!</h1>
+        <p>Open the interactive API docs at http://URL/docs .</p>
       </body>
     </html>
     """
@@ -21,4 +21,4 @@ async def read_index() -> str:
 
 @app.get("/hello_world")
 async def read_root() -> dict[str, str]:
-    return {"message": "hello world!"}
+    return {"message": "hello world! this is an editted message."}
