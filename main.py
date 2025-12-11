@@ -33,7 +33,7 @@ async def get_current_time() -> dict[str, str]:
 
 @app.get("/greet/{name}")
 async def greet_user(name: str) -> dict[str, str]:
-    return {"message": f" {name}",
+    return {"message": f"Hello {name}!",
             "timestamp": datetime.now().strftime("%H:%M:%S")}
 
 @app.get("/double/{number}")
